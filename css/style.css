@@ -1,181 +1,120 @@
-html{
-  scroll-behavior: smooth;
-}
-
-/* body */
 body{
-  background-color: #cfebb6;
-  font-size: small;
-  line-height: 1.5;
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Merriweather', 'Anton', 'Times New Roman', 'Arial';
+   /* Set line spacing */
+   line-height: 2;
 }
 
-.travel-body{
-  background-color: #bbd5f1;
-}
-
-.recipe-body{
-  background-color: #f3dbb0;
-}
-
-/* header */
-nav a{
-  text-decoration: none;
-}
-
-header.a{
-  text-decoration: none;
-}
-
-header a:hover, header a:focus{
-  text-decoration: underline;
-}
 
 header, nav{
-  padding: 5px 10px 5px 10px;
-  margin: 5px 10px 5px 10px;
-  text-align: center;
-  font-weight: lighter;
+    /* Set padding and margin */
+    padding: 5px 10px 15px 20px;
+    margin: 5px 10px 15px 20px;
+    text-align: center;
+    
+
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 255, 184);
+    font-size: 20px;
+
 }
 
-nav ul li{
-  display: inline;
-  padding: 10px;
-  margin: 10px;
-  background-color: rgb(255, 255, 184);
-  font-size: 20px;
-  border-radius: 10px;
-  color: azure;
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+}
+
+a:visited{
+    /* Set color */
+    color: black;
+
 }
 
 nav a.current{
-  /* Set text decoration, transformation, and underline properties */
-  color: rgb(53, 46, 57);
-  text-decoration: none;
-  text-underline-offset: 8px;
-  box-shadow: 0 5px 5px 0;
-  border-radius: 5px;
+    /* Set text decoration, transformation, and underline properties */
+    color: brown;
+    text-decoration: green wavy underline;
+    text-underline-offset: 8px;
 }
 
-.skip{
-  position: absolute;
-  top: -40px;
-}
 
 h1{
-  font-size: 30px;
-  color: #3a3a3a;
-  font-weight: lighter;
-  text-align: center;
+   /*Set font and font size*/
+   font-size: larger;
+
 }
 
 h2{
-  font-size: large;
-  font-weight: lighter;
-  text-align: center;
+    /*Set font, font size, and alignment*/
+    font-size: larger;
+    font-family: 'Anton', 'Merriweather', 'Times New Roman', serif;
 }
 
 h3{
-  font-size: medium;
+    /*Set font size*/
+
 }
 
-h1, h2, h3, p, h2 span {
-  margin: 15px 0 15px 0;
+h1, h2, h3{
+    /*Set margin */
+
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    width: 90%;
+    margin: 0 auto;
+    background-color: grey;
+    justify-content: space-between;
+    border-radius: 30px;
+    row-gap: 10px;
+
+
 }
 
-.pet{
-  width: 90%;
-  margin: auto;
-  display: grid;
-  padding: 15px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  align-content: center;
-  justify-content: space-around;
-}
+.grid div{
+    /* Set border properties, padding, and background color */
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 30px;
 
-.pet div{
-  border: 2px solid #029356;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: azure;
-}
-
-.travel{
-  width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  align-content: center;
-  justify-content: space-around;
-}
-
-.travel div{
-  border: 2px solid #054fb9;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: white;
-}
-
-.recipe{
-  width: 90%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
-  align-content: center;
-  justify-content: space-around;
-}
-
-.recipe div{
-  border: 2px solid #c44601;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #faeae8;
 }
 
 .grid img{
-  /* Set width, margin, and display */
-  width: 90%;
-  margin: auto;
-  display: block;
-  align-content: center;
+    /* Set width, margin, and display */
+    width: 90%;
+    margin: 0 auto;
+    display: block;
 }
 
-figure{
-  width: 90%;
-  margin: auto;
-  display: grid;
-  padding: 5px;
-  /* grid-template-rows: 1fr 1fr; */
-  grid-template-columns: 1fr 1fr;
-  gap: 3px;
-  align-content: center;
-  align-items: start;
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
 }
 
-figure img, figure video{
-  grid-column: 1/-1;
-  width: 90%;
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
 }
+    
 
-.pet-fig img, .pet-fig video{
-  grid-column: span 1;
-  width: 90%;
-}
-
-figure figcaption{
-  grid-column: 1/-1;
-  width: 90%;
-  margin: auto;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .gif {
-    display: none; /* Hide GIFs */
+p + p {
+     /* Set indentation */
   }
+  
+p{
+     /* Set margin */
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
 }
